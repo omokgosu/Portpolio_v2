@@ -52,6 +52,7 @@ export const metadata: Metadata = {
 // components
 import Header from "@/components/Header";
 import SideNavigation from "@/components/SideNavigation";
+import Footer from "@/components/Footer";
 
 export default function RootLayout({
   children,
@@ -69,6 +70,7 @@ export default function RootLayout({
             <SideNavigation />
             <main className="flex-1 overflow-auto bg-main-bg">{children}</main>
           </div>
+          <Footer />
         </div>
       </body>
     </html>
