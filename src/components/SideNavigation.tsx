@@ -21,7 +21,7 @@ const fileStructure: TreeNode[] = [
     name: "app",
     type: "folder",
     children: [
-      { name: "about.tsx", type: "file", href: "/about", extension: "tsx" },
+      { name: "about.tsx", type: "file", href: "/", extension: "tsx" },
       { name: "blog.scss", type: "file", href: "/blog", extension: "scss" },
       {
         name: "Projects.json",
