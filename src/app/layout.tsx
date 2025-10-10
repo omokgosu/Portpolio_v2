@@ -67,7 +67,7 @@ export default function RootLayout({
           <Header />
           <div className="flex flex-1 overflow-hidden">
             <SideNavigation />
-            <main className="flex-1 overflow-auto">{children}</main>
+            <main className="flex-1 overflow-auto bg-main-bg">{children}</main>
           </div>
         </div>
       </body>
