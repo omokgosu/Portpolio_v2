@@ -49,6 +49,9 @@ export const metadata: Metadata = {
   },
 };
 
+// components
+import Header from "@/components/Header";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -59,7 +62,8 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main className="min-h-screen">{children}</main>
       </body>
     </html>
   );
