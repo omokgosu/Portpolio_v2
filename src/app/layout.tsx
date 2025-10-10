@@ -51,6 +51,7 @@ export const metadata: Metadata = {
 
 // components
 import Header from "@/components/Header";
+import SideNavigation from "@/components/SideNavigation";
 
 export default function RootLayout({
   children,
@@ -58,12 +59,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko">
+    <html lang="ko" className="w-full h-full">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased w-full h-full`}
       >
-        <Header />
-        <main className="min-h-screen">{children}</main>
+        <div className="w-full h-full flex flex-col">
+          <Header />
+          <div className="flex flex-1 overflow-hidden">
+            <SideNavigation />
+            <main className="flex-1 overflow-auto">{children}</main>
+          </div>
+        </div>
       </body>
     </html>
   );

@@ -31,8 +31,11 @@ export const metadata: Metadata = {
 
 export default function Home() {
   return (
-    <div className="min-h-screen p-8">
-      <h1>홈 페이지</h1>
+    <div className="p-8 h-full overflow-auto">
+      <h1 className="text-2xl font-bold mb-4">홈 페이지</h1>
+      <p className="text-muted-foreground">
+        양진성의 프론트엔드 개발자 포트폴리오에 오신 것을 환영합니다.
+      </p>
     </div>
   );
 }
