@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "양진성 | Frontend Developer Portfolio",
@@ -37,15 +38,28 @@ export default function Home() {
       <div className="mx-auto">
         {/* 헤더 섹션 */}
         <div className="mb-12">
-          <h1 className="text-4xl font-bold mb-4 text-foreground">
-            안녕하세요, 양진성입니다 👋
-          </h1>
-          <p className="text-xl text-muted-foreground leading-relaxed">
-            사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다.
-            <br />
-            깔끔하고 직관적인 인터페이스를 만드는 것을 좋아하며, 정말 의미있는
-            서비스를 만들어냈을 때 기쁨을 느낍니다.
-          </p>
+          <div className="flex items-start gap-8">
+            <div className="flex gap-4 items-center flex-1">
+              <Image
+                src="/assets/profile.webp"
+                alt="양진성 프로필"
+                width={130}
+                height={130}
+                className="rounded-full"
+              />
+              <div>
+                <h1 className="text-4xl font-bold mb-4 text-foreground">
+                  안녕하세요, 양진성입니다 👋
+                </h1>
+                <p className="text-xl text-muted-foreground leading-relaxed">
+                  사용자 경험을 최우선으로 생각하는 프론트엔드 개발자입니다.
+                  <br />
+                  깔끔하고 직관적인 인터페이스를 만드는 것을 좋아하며, 정말
+                  의미있는 서비스를 만들어냈을 때 기쁨을 느낍니다.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* 자기소개 섹션 */}
