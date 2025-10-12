@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Skills | 양진성",
+  title: "Skills",
   description:
     "프론트엔드 개발자 양진성의 기술 스택입니다. React, Next.js, TypeScript, JavaScript, HTML/CSS, Git 등 다양한 웹 기술을 다룹니다.",
   keywords: [

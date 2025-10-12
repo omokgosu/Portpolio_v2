@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact | 양진성",
+  title: "Contact",
   description:
     "양진성에게 연락하세요. 프로젝트 협업, 채용 문의, 기술 관련 질문 등 언제든 환영합니다.",
   keywords: ["연락처", "Contact", "이메일", "채용", "협업 문의"],

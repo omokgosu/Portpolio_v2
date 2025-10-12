@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blog | 양진성",
+  title: "Blog",
   description:
     "프론트엔드 개발 관련 기술 블로그입니다. 개발 경험, 기술 트렌드, 문제 해결 과정을 공유합니다.",
   keywords: [
