@@ -166,10 +166,41 @@ export default function Home() {
                 </li>
                 <li>
                   PHP에서 React.js 로 마이그레이션 하며 FCP 개선 및 TBT 개선,
-                  Right House 점수 30점 향상
+                  Right House 점수 개선
                 </li>
                 <li>사내 OCR 솔루션 개발 및 유지보수</li>
                 <li>디자인 시스템 적용 및 공통 모듈 개발</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        {/* 경험 섹션 */}
+        <div className="mb-12">
+          <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
+            Experience
+          </h2>
+          <div className="space-y-6">
+            <div className="border-l-4 border-primary pl-4">
+              <h3 className="text-lg font-medium text-foreground">
+                크래프톤 정글 9기 / 기숙형 부트캠프
+              </h3>
+              <p className="text-muted-foreground">2025.05 - 2025.10</p>
+              <ul className="flex flex-col gap-2 text-muted-foreground mt-2 list-disc list-inside">
+                <li>
+                  C 언어로 Malloc Lab을 직접 구현하며 시스템 수준에서의 메모리
+                  관리에 대한 이해도를 높였습니다.
+                </li>
+                <li>
+                  Threads 스케쥴링 &#40;우선순위 기부 포함&#41;, Virtual
+                  Memory를 직접 구현하며 OS의 핵심 동작 원리를 체득했습니다.
+                </li>
+                <li>
+                  마지막 팀 프로젝트에서 협업의 어려움과 가치를 경험하며, "믿고
+                  맡길 수 있는 동료"로서의 태도를 다시 한 번 생각하게
+                  되었습니다. 어떤 개발자가 되고 싶은지 명확히 할 수 있는
+                  시간이었습니다.
+                </li>
               </ul>
             </div>
           </div>
