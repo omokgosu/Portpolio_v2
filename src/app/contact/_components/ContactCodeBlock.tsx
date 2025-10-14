@@ -17,23 +17,24 @@ export default function ContactCodeBlock({
   items,
 }: ContactCodeBlockProps) {
   return (
-    <div className="flex px-3 mb-9">
+    <div className="flex px-3 mb-9 font-semibold">
       <div className="flex-1">
         <div className="font-mono text-sm">
           {/* const 선언 */}
           <div className="mb-2">
-            <span className="text-purple-400">const</span>{" "}
-            <span className="text-blue-400">{variableName}</span>
+            <span className="text-[#74bdb7]">export const</span>{" "}
+            <span className="text-[#9e94eb]">{variableName}</span>
             <span className="text-foreground">: </span>
-            <span className="text-yellow-300">{typeName}</span>
-            <span className="text-foreground"> = {"{"}</span>
+            <span className="text-[#d19c74]">{typeName}</span>
+            <span className="text-foreground"> = </span>
+            <span className="text-[#d19c74]">{"{"}</span>
           </div>
 
           {/* properties */}
           <div className="ml-4 space-y-2">
             {items.map((item) => (
               <div key={item.key}>
-                <span className="text-blue-300">{item.key}</span>
+                <span className="text-[#9e94eb]">{item.key}</span>
                 <span className="text-foreground">: </span>
                 {item.isLink && item.href ? (
                   <a
@@ -46,12 +47,12 @@ export default function ContactCodeBlock({
                         ? undefined
                         : "noopener noreferrer"
                     }
-                    className="text-green-400 hover:underline"
+                    className="text-[#d8a0d0] hover:underline"
                   >
                     "{item.value}"
                   </a>
                 ) : (
-                  <span className="text-green-400">"{item.value}"</span>
+                  <span className="text-[#BA8AB3]">"{item.value}"</span>
                 )}
                 <span className="text-foreground">,</span>
               </div>
@@ -59,8 +60,8 @@ export default function ContactCodeBlock({
           </div>
 
           <div className="mt-2">
-            <span className="text-foreground">{"}"}</span>
-            <span className="text-purple-400"> as const</span>
+            <span className="text-[#d19c74]">{"}"}</span>
+            <span className="text-[#9e94eb]"> as const</span>
             <span className="text-foreground">;</span>
           </div>
         </div>
