@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import { projectsData } from "./_constants/projectsData";
+import ProjectJsonBlock from "./_components/ProjectJsonBlock";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -22,8 +24,59 @@ export const metadata: Metadata = {
 
 export default function ProjectsPage() {
   return (
-    <div className="min-h-screen p-8">
-      <h1>Projects 페이지</h1>
+    <div className="p-8 h-full overflow-auto">
+      <div className="mx-auto">
+        {/* 헤더 섹션 */}
+        <div className="mb-8">
+          <h1 className="text-4xl font-bold mb-2 text-foreground">
+            Projects.json
+          </h1>
+          <p className="text-xl text-muted-foreground leading-relaxed">
+            제가 작업한 프로젝트들입니다. 클릭하시면 자세한 내용을 확인하실 수
+            있습니다.
+          </p>
+        </div>
+
+        {/* JSON 배열 시작 */}
+        <div className="flex">
+          <div className="text-muted-foreground text-sm font-mono select-none">
+            <div className="space-y-2">
+              {Array.from({ length: 16 }).map((_, index) => (
+                <div key={index}>{index + 1}</div>
+              ))}
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <div className="flex px-3">
+              <div className="flex-1">
+                <div className="font-mono text-sm">
+                  <div className="mb-2">
+                    <span className="text-purple-400">const</span>{" "}
+                    <span className="text-blue-400">projects</span>
+                    <span className="text-foreground">: </span>
+                    <span className="text-yellow-300">Project[]</span>
+                    <span className="text-foreground"> = [</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 프로젝트 목록 */}
+            {projectsData.map((project, index) => (
+              <ProjectJsonBlock
+                key={project.id}
+                project={project}
+                index={index}
+              />
+            ))}
+
+            {/* JSON 배열 끝 */}
+            <div className="font-mono text-sm px-3">
+              <span className="text-foreground">];</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
