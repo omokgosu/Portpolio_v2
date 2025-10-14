@@ -46,7 +46,7 @@ export default function BlogPage() {
           </div>
           <div className="flex flex-col">
             {/* 코드 블록 스타일 링크 섹션 */}
-            <SocialsCodeBlock name="#blog">
+            <SocialsCodeBlock name="#blog" type="id">
               <SocialLinkItem
                 keyName="velog"
                 label="https://velog.io/@dkzm4646/posts"
@@ -54,7 +54,7 @@ export default function BlogPage() {
               />
               <CodeTextItem
                 keyName="description"
-                value="종종 정리하고 있는 벨로그 입니다. :)"
+                value="종종 정리하고 있는 벨로그 입니다"
               />
               <SocialLinkItem
                 keyName="naver_blog"
@@ -63,12 +63,12 @@ export default function BlogPage() {
               />
               <CodeTextItem
                 keyName="description"
-                value="예전에 작성했던 네이버 블로그입니다. 더 이상 작성되지 않고 벨로그에서 포스트를 작성하고 있습니다."
+                value="예전에 작성했던 네이버 블로그입니다. 더 이상 작성되지 않고 벨로그에서 포스트를 작성하고 있습니다"
               />
             </SocialsCodeBlock>
 
             {/* 깃허브 섹션 */}
-            <SocialsCodeBlock name=".github">
+            <SocialsCodeBlock name=".github" type="class">
               <SocialLinkItem
                 keyName="github"
                 label="https://github.com/omokgosu"
@@ -76,7 +76,7 @@ export default function BlogPage() {
               />
               <CodeTextItem
                 keyName="description"
-                value="제가 작성한 코드를 볼 수 있는 깃허브입니다. 의미있는 프로젝트를 하기 위해 노력하고 있어요."
+                value="제가 작성한 코드를 볼 수 있는 깃허브입니다. 의미있는 프로젝트를 하기 위해 노력하고 있어요"
               />
             </SocialsCodeBlock>
           </div>

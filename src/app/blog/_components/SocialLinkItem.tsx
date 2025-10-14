@@ -12,17 +12,17 @@ export default function SocialLinkItem({
   href,
 }: SocialLinkItemProps) {
   return (
-    <div className="flex items-center">
-      <span className="text-orange-400">{keyName}:</span>
+    <div className="flex items-center text-foreground">
+      {`${keyName}: "`}
       <Link
         href={href}
-        className="text-yellow-400 ml-2 hover:text-yellow-300 transition-colors underline"
+        className="underline"
         target="_blank"
         rel="noopener noreferrer"
       >
-        {label}
+        {`${label}`}
       </Link>
-      <span className="text-foreground">;</span>
+      <span>{`";`}</span>
     </div>
   );
 }
