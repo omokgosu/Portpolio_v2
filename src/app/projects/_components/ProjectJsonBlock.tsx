@@ -11,7 +11,7 @@ export default function ProjectJsonBlock({
   index,
 }: ProjectJsonBlockProps) {
   return (
-    <Link href={`/projects/${project.id}`} className="ml-2">
+    <Link href={`/projects/${project.id}`} className="ml-2 font-semibold">
       <div className="flex px-3 mb-2 hover:bg-muted/30 rounded-lg transition-colors cursor-pointer group">
         <div className="flex-1">
           <div className="font-mono text-sm">
@@ -23,17 +23,17 @@ export default function ProjectJsonBlock({
             <div className="ml-6 space-y-2">
               {/* id */}
               <div>
-                <span className="text-blue-300">id</span>
+                <span className="text-code-variable">id</span>
                 <span className="text-foreground">: </span>
-                <span className="text-green-400">"{project.id}"</span>
+                <span className="text-code-string">"{project.id}"</span>
                 <span className="text-foreground">,</span>
               </div>
 
               {/* title */}
               <div>
-                <span className="text-blue-300">title</span>
+                <span className="text-code-variable">title</span>
                 <span className="text-foreground">: </span>
-                <span className="text-green-400 group-hover:underline">
+                <span className="text-code-string group-hover:underline">
                   "{project.title}"
                 </span>
                 <span className="text-foreground">,</span>
@@ -41,11 +41,11 @@ export default function ProjectJsonBlock({
 
               {/* skills */}
               <div>
-                <span className="text-blue-300">skills</span>
+                <span className="text-code-variable">skills</span>
                 <span className="text-foreground">: [</span>
                 {project.skils.map((skill, idx) => (
                   <span key={skill}>
-                    <span className="text-green-400">"{skill}"</span>
+                    <span className="text-code-string">"{skill}"</span>
                     {idx < project.skils.length - 1 && (
                       <span className="text-foreground">, </span>
                     )}
@@ -56,17 +56,17 @@ export default function ProjectJsonBlock({
 
               {/* period */}
               <div>
-                <span className="text-blue-300">period</span>
+                <span className="text-code-variable">period</span>
                 <span className="text-foreground">: </span>
-                <span className="text-green-400">"{project.period}"</span>
+                <span className="text-code-string">"{project.period}"</span>
                 <span className="text-foreground">,</span>
               </div>
 
               {/* role */}
               <div>
-                <span className="text-blue-300">role</span>
+                <span className="text-code-variable">role</span>
                 <span className="text-foreground">: </span>
-                <span className="text-green-400">"{project.role}"</span>
+                <span className="text-code-string">"{project.role}"</span>
                 <span className="text-foreground">,</span>
               </div>
             </div>

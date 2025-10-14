@@ -17,16 +17,16 @@ export default function SocialsCodeBlock({
           <div className="mb-2 font-semibold">
             <span
               className={`${
-                type === "id" ? "text-[#9e94eb]" : "text-[#d19c74]"
+                type === "id" ? "text-code-variable" : "text-code-type"
               }`}
             >{`${name}`}</span>
-            <span className="text-[#d19c74]">{" {"}</span>
+            <span className="text-code-type">{" {"}</span>
           </div>
 
           <div className="ml-4 space-y-2">{children}</div>
 
           <div className="mt-2 font-semibold">
-            <span className="text-[#d19c74]">{`}`}</span>
+            <span className="text-code-type">{`}`}</span>
           </div>
         </div>
       </div>

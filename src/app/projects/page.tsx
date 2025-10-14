@@ -51,10 +51,10 @@ export default function ProjectsPage() {
               <div className="flex-1">
                 <div className="font-mono text-sm">
                   <div className="mb-2">
-                    <span className="text-purple-400">const</span>{" "}
-                    <span className="text-blue-400">projects</span>
+                    <span className="text-code-keyword">const</span>{" "}
+                    <span className="text-code-variable">projects</span>
                     <span className="text-foreground">: </span>
-                    <span className="text-yellow-300">Project[]</span>
+                    <span className="text-code-type">Project[]</span>
                     <span className="text-foreground"> = [</span>
                   </div>
                 </div>

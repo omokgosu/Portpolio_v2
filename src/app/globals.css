@@ -8,6 +8,13 @@
   --muted: #6a6a6a;
   --muted-foreground: #9a9a9a;
   --main-bg: #191919;
+
+  /* Code block colors */
+  --code-keyword: #74bdb7;
+  --code-variable: #9e94eb;
+  --code-type: #d19c74;
+  --code-link: #d8a0d0;
+  --code-string: #ba8ab3;
 }
 
 @theme inline {
@@ -18,6 +25,11 @@
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
   --color-main-bg: var(--main-bg);
+  --color-code-keyword: var(--code-keyword);
+  --color-code-variable: var(--code-variable);
+  --color-code-type: var(--code-type);
+  --color-code-link: var(--code-link);
+  --color-code-string: var(--code-string);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   --font-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,

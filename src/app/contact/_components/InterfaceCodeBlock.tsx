@@ -13,24 +13,24 @@ export default function InterfaceCodeBlock({
         <div className="font-mono text-sm">
           {/* interface 정의 */}
           <div className="mb-2">
-            <span className="text-[#74bdb7]">export interface</span>{" "}
-            <span className="text-[#d19c74]">{`${interfaceName} {`}</span>
+            <span className="text-code-keyword">export interface</span>{" "}
+            <span className="text-code-type">{`${interfaceName} {`}</span>
           </div>
 
           {/* properties */}
           <div className="ml-4 space-y-2">
             {properties.map((prop) => (
               <div key={prop.key}>
-                <span className="text-[#9e94eb]">{prop.key}</span>
+                <span className="text-code-variable">{prop.key}</span>
                 <span className="text-foreground">: </span>
-                <span className="text-[#d8a0d0]">{prop.type}</span>
+                <span className="text-code-link">{prop.type}</span>
                 <span className="text-foreground">;</span>
               </div>
             ))}
           </div>
 
           <div className="mt-2">
-            <span className="text-[#d19c74]">{"}"}</span>
+            <span className="text-code-type">{"}"}</span>
           </div>
         </div>
       </div>
