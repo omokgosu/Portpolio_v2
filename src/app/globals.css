@@ -112,3 +112,21 @@ body {
 .wmde-markdown hr {
   border-color: var(--border) !important;
 }
+
+.wmde-markdown ul,
+.wmde-markdown ol {
+  list-style: revert !important;
+  padding-left: 2em !important;
+}
+
+.wmde-markdown ul {
+  list-style-type: disc !important;
+}
+
+.wmde-markdown ol {
+  list-style-type: decimal !important;
+}
+
+.wmde-markdown li {
+  display: list-item !important;
+}
