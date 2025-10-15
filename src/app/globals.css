@@ -97,7 +97,10 @@ body {
 
 .wmde-markdown blockquote {
   border-left-color: var(--code-keyword) !important;
-  color: var(--muted-foreground) !important;
+  color: var(--foreground) !important;
+  background-color: rgba(116, 189, 183, 0.15) !important;
+  padding: 12px 16px !important;
+  border-radius: 4px !important;
 }
 
 .wmde-markdown table {
