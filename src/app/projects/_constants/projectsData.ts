@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
       "confluence",
       "aws",
     ],
-    role: "f Developer",
+    role: "풀스택 개발자",
   },
   {
     id: "신한은행 - AI Arena",
@@ -37,6 +37,6 @@ export const projectsData: Project[] = [
       "recoil",
       "SSE",
     ],
-    role: "Frontend Developer",
+    role: "프론트엔드 개발자",
   },
 ];
