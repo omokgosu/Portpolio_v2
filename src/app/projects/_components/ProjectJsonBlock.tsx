@@ -21,20 +21,22 @@ export default function ProjectJsonBlock({
             </div>
 
             <div className="ml-6 space-y-2">
-              {/* id */}
-              <div>
-                <span className="text-code-variable">id</span>
-                <span className="text-foreground">: </span>
-                <span className="text-code-string">"{project.id}"</span>
-                <span className="text-foreground">,</span>
-              </div>
-
               {/* title */}
               <div>
                 <span className="text-code-variable">title</span>
                 <span className="text-foreground">: </span>
                 <span className="text-code-string group-hover:underline">
                   "{project.title}"
+                </span>
+                <span className="text-foreground">,</span>
+              </div>
+
+              {/* description */}
+              <div>
+                <span className="text-code-variable">description</span>
+                <span className="text-foreground">: </span>
+                <span className="text-code-string">
+                  "{project.description}"
                 </span>
                 <span className="text-foreground">,</span>
               </div>

@@ -1,6 +1,7 @@
 export interface Project {
-  id: string;
-  title: string;
+  id: string; // URL 라우팅용
+  title: string; // 화면에 표시될 프로젝트명
+  description: string; // 프로젝트 설명
   skils: string[];
   period: string;
   role: string;
@@ -8,8 +9,9 @@ export interface Project {
 
 export const projectsData: Project[] = [
   {
-    id: "Good-Job",
-    title: "구직자를 위한 커리어 플랫폼",
+    id: "good-job",
+    title: "Good-Job",
+    description: "구직자를 위한 커리어 플랫폼",
     period: "2025.08 - 2025.10",
     skils: [
       "Next.js",
@@ -26,8 +28,9 @@ export const projectsData: Project[] = [
     role: "풀스택 개발자",
   },
   {
-    id: "신한은행 - AI Arena",
-    title: "LLM 품질 비교 목적의 사내 서비스",
+    id: "shinhan-ai-arena",
+    title: "신한은행 - AI Arena",
+    description: "LLM 품질 비교 목적의 사내 서비스",
     period: "2024.06 - 2024.08",
     skils: [
       "React",

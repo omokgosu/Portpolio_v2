@@ -12,8 +12,13 @@ export function generateStaticParams() {
 }
 
 // 메타데이터 생성
-export function generateMetadata({ params }: { params: { id: string } }) {
-  const project = projectsData.find((p) => p.id === params.id);
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
+  const { id } = await params;
+  const project = projectsData.find((p) => p.id === id);
 
   if (!project) {
     return {
@@ -22,8 +27,8 @@ export function generateMetadata({ params }: { params: { id: string } }) {
   }
 
   return {
-    title: project.title,
-    description: `${project.title} - ${project.role}`,
+    title: `${project.title} - ${project.description}`,
+    description: `${project.description} - ${project.role}`,
   };
 }
 
@@ -58,9 +63,12 @@ export default function ProjectDetailPage({
     <div className="h-full overflow-auto">
       {/* 프로젝트 헤더 정보 */}
       <div className="p-8 border-b border-border bg-header-bg">
-        <h1 className="text-3xl font-bold mb-4 text-foreground">
+        <h1 className="text-3xl font-bold mb-2 text-foreground">
           {project.title}
         </h1>
+        <p className="text-xl text-muted-foreground mb-4">
+          {project.description}
+        </p>
         <div className="flex flex-wrap gap-4 text-sm text-muted-foreground">
           <div>
             <span className="font-semibold">기간:</span> {project.period}
