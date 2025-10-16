@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 
 export const metadata: Metadata = {
   title: "양진성 | Frontend Developer Portfolio",
@@ -210,10 +211,10 @@ export default function Home() {
                   Memory를 직접 구현하며 OS의 핵심 동작 원리를 체득했습니다.
                 </li>
                 <li>
-                  마지막 팀 프로젝트에서 협업의 어려움과 가치를 경험하며, "믿고
-                  맡길 수 있는 동료"로서의 태도를 다시 한 번 생각하게
-                  되었습니다. 어떤 개발자가 되고 싶은지 명확히 할 수 있는
-                  시간이었습니다.
+                  마지막 팀 프로젝트에서 협업의 어려움과 가치를 경험하며,
+                  &quot;믿고 맡길 수 있는 동료&quot;로서의 태도를 다시 한 번
+                  생각하게 되었습니다. 어떤 개발자가 되고 싶은지 명확히 할 수
+                  있는 시간이었습니다.
                 </li>
               </ul>
             </div>
@@ -223,7 +224,7 @@ export default function Home() {
         {/* 연락처 섹션 */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
-            Let's Connect
+            Let&apos;s Connect
           </h2>
           <p className="text-muted-foreground mb-4">
             함께 일하고 싶다는 생각이 드셨거나, 프로젝트에 대해 이야기하고
@@ -232,18 +233,18 @@ export default function Home() {
             커피챗은 언제든 환영입니다 :)
           </p>
           <div className="flex gap-4">
-            <a
+            <Link
               href="/contact"
               className="px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors"
             >
               연락하기
-            </a>
-            <a
+            </Link>
+            <Link
               href="/projects"
               className="px-6 py-3 border border-border text-foreground rounded-lg hover:bg-muted transition-colors"
             >
               프로젝트 보기
-            </a>
+            </Link>
           </div>
         </div>
       </div>

@@ -26,7 +26,7 @@ export default function ProjectJsonBlock({
                 <span className="text-code-variable">title</span>
                 <span className="text-foreground">: </span>
                 <span className="text-code-string group-hover:underline">
-                  "{project.title}"
+                  &quot;{project.title}&quot;
                 </span>
                 <span className="text-foreground">,</span>
               </div>
@@ -36,7 +36,7 @@ export default function ProjectJsonBlock({
                 <span className="text-code-variable">description</span>
                 <span className="text-foreground">: </span>
                 <span className="text-code-string">
-                  "{project.description}"
+                  &quot;{project.description}&quot;
                 </span>
                 <span className="text-foreground">,</span>
               </div>
@@ -47,7 +47,9 @@ export default function ProjectJsonBlock({
                 <span className="text-foreground">: [</span>
                 {project.skils.map((skill, idx) => (
                   <span key={skill}>
-                    <span className="text-code-string">"{skill}"</span>
+                    <span className="text-code-string">
+                      &quot;{skill}&quot;
+                    </span>
                     {idx < project.skils.length - 1 && (
                       <span className="text-foreground">, </span>
                     )}
@@ -60,7 +62,9 @@ export default function ProjectJsonBlock({
               <div>
                 <span className="text-code-variable">period</span>
                 <span className="text-foreground">: </span>
-                <span className="text-code-string">"{project.period}"</span>
+                <span className="text-code-string">
+                  &quot;{project.period}&quot;
+                </span>
                 <span className="text-foreground">,</span>
               </div>
 
@@ -68,7 +72,9 @@ export default function ProjectJsonBlock({
               <div>
                 <span className="text-code-variable">role</span>
                 <span className="text-foreground">: </span>
-                <span className="text-code-string">"{project.role}"</span>
+                <span className="text-code-string">
+                  &quot;{project.role}&quot;
+                </span>
                 <span className="text-foreground">,</span>
               </div>
             </div>

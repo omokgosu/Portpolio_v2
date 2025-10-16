@@ -49,10 +49,12 @@ export default function ContactCodeBlock({
                     }
                     className="text-code-link hover:underline"
                   >
-                    "{item.value}"
+                    &quot;{item.value}&quot;
                   </a>
                 ) : (
-                  <span className="text-code-string">"{item.value}"</span>
+                  <span className="text-code-string">
+                    &quot;{item.value}&quot;
+                  </span>
                 )}
                 <span className="text-foreground">,</span>
               </div>
