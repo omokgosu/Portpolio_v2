@@ -39,7 +39,10 @@ function TreeNodeItem({ node, depth = 0 }: { node: TreeNode; depth?: number }) {
   const [isOpen, setIsOpen] = useState(true);
   const pathname = usePathname();
   const hasChildren = node.children && node.children.length > 0;
-  const isActive = node.href && pathname === node.href;
+  const isActive =
+    node.href &&
+    (pathname === node.href ||
+      (node.href !== "/" && pathname.startsWith(node.href + "/")));
 
   const getFileIcon = (extension?: string) => {
     switch (extension) {
