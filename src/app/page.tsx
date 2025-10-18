@@ -66,7 +66,7 @@ export default function Home() {
         {/* 자기소개 섹션 */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
-            About Me
+            자기소개
           </h2>
           <div className="space-y-4 text-muted-foreground leading-relaxed">
             <p>
@@ -103,12 +103,12 @@ export default function Home() {
         {/* 기술 스택 섹션 */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
-            Tech Stack
+            기술 스택
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
               <h3 className="text-lg font-medium mb-3 text-foreground">
-                Frontend
+                프론트엔드
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
@@ -134,23 +134,44 @@ export default function Home() {
             </div>
             <div>
               <h3 className="text-lg font-medium mb-3 text-foreground">
-                Tools & Others
+                백엔드 & 인프라
               </h3>
               <div className="flex flex-wrap gap-2">
                 {[
-                  "C",
-                  "Python",
-                  "Docker",
-                  "AWS",
+                  "Node.js",
                   "MySQL",
                   "MongoDB",
-                  "Figma",
-                  "Git",
-                  "Node.js",
-                  "Slack",
-                  "Jira",
-                  "Confluence",
+                  "Docker",
+                  "AWS",
+                  "C",
+                  "Python",
                 ].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-muted text-foreground rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-foreground">협업</h3>
+              <div className="flex flex-wrap gap-2">
+                {["Git", "Figma", "Jira", "Confluence"].map((tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-muted text-foreground rounded-full text-sm"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
+            </div>
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-foreground">소통</h3>
+              <div className="flex flex-wrap gap-2">
+                {["Slack", "Notion"].map((tech) => (
                   <span
                     key={tech}
                     className="px-3 py-1 bg-muted text-foreground rounded-full text-sm"
@@ -166,7 +187,7 @@ export default function Home() {
         {/* 경력/경험 섹션 */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
-            Carrer
+            경력
           </h2>
           <div className="space-y-6">
             <div className="border-l-4 border-primary pl-4">
@@ -193,7 +214,7 @@ export default function Home() {
         {/* 경험 섹션 */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
-            Experience
+            경험
           </h2>
           <div className="space-y-6">
             <div className="border-l-4 border-primary pl-4">
@@ -224,7 +245,7 @@ export default function Home() {
         {/* 연락처 섹션 */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold mb-6 text-foreground border-b border-border pb-2">
-            Let&apos;s Connect
+            연락하기
           </h2>
           <p className="text-muted-foreground mb-4">
             함께 일하고 싶다는 생각이 드셨거나, 프로젝트에 대해 이야기하고
