@@ -190,6 +190,30 @@ export default function Home() {
             경력
           </h2>
           <div className="space-y-6">
+            {/* 버즈빌 경력 추가 */}
+            <div className="border-l-4 border-primary pl-4">
+              <h3 className="text-lg font-medium text-foreground">
+                버즈빌 / 프론트엔드 엔지니어 (인턴)
+              </h3>
+              <p className="text-muted-foreground">2025.06 - 현재</p>
+              <ul className="flex flex-col gap-2 text-muted-foreground mt-2 list-disc list-inside">
+                <li>
+                  Next.js·TypeScript 기반 제품 개선 주도 — SSR 최적화 및 API 호출 병렬화로 FCP/LCP 45%+ 개선
+                </li>
+                <li>
+                  프론트엔드 전용 A/B 테스트 인프라 설계·운영(동시 5개 이상), 주간미션 룰렛 실험으로 매체비 30% 절감
+                </li>
+                <li>
+                  Datadog RUM/APM·Loki 기반 옵저버빌리티 구축으로 배포 후 5분 내 이슈 인지 체계 수립
+                </li>
+                <li>
+                  Claude Code 기반 AI 워크플로우 도입 및 팀 전파, PR 자동화·코드리뷰 효율화
+                </li>
+                <li>
+                  PWA / 웹 푸시 소프트 프롬프트 전략으로 월 신규 구독자 약 4,000명 확보
+                </li>
+              </ul>
+            </div>
             <div className="border-l-4 border-primary pl-4">
               <h3 className="text-lg font-medium text-foreground">
                 피앤씨스타 / FE - 정규직
